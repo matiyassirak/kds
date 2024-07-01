@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.header {
+  background-color: #333;
+  text-align: center;
+
+  padding: 25px 0;
+}
+
+.header h1 {
+  font-size: 32px;
+  color: #fff;
+}
+
+main {
+  padding: 60px;
+}
+
+/* Orders */
+.sub-heading {
+  margin-bottom: 30px;
+}
+
+.orders-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+.order {
+  width: 270px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.order-header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.order-header .staff-name {
+  text-align: end;
+}
+
+.order-header .order-id {
+  text-align: end;
+}
+
+.order-header .time,
+.order-header .order-id {
+  margin-top: 15px;
+}
+
+.order-details {
+  padding: 8px;
+}
+
+.order-details ul li {
+  list-style: none;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.order-details ul li:last-child {
+  border-bottom: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order-details ul li p {
+  margin-top: 5px;
+}
+
+.done {
+  padding: 10px 15px;
+  background-color: #333;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: white;
+  border-radius: 4px;
+}
+
+.done.hide {
+  opacity: 0;
+  visibility: hidden;
+}
